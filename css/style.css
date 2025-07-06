@@ -435,3 +435,26 @@
                 font-size: 0.8rem;
             }
         }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: rgba(255, 255, 255, 0.95);
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.show {
+                display: flex; /* Ini WAJIB agar toggle berfungsi */
+            }
+        }
+
