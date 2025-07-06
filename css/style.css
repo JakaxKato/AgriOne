@@ -457,4 +457,139 @@
                 display: flex; /* Ini WAJIB agar toggle berfungsi */
             }
         }
+        
+            .consult-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            }
+
+            .consult-switcher button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            background: #e0e0e0;
+            cursor: pointer;
+            transition: background 0.3s;
+            }
+
+            .consult-switcher button.active {
+            background: linear-gradient(45deg, #2d5a27, #4CAF50);
+            color: white;
+            }
+
+            .consult-box {
+            display: none;
+            }
+
+            .consult-box.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+            .stars {
+            color: gold;
+            font-size: 1.1rem;
+        }
+            
+            #formProduk {
+            padding: 1rem;
+            background-color: #f0fdf4;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+            #formProduk input,
+            #formProduk textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+            #formProduk .cta-button {
+            background: linear-gradient(45deg, #2d5a27, #4CAF50);
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+        }
+            #formProduk .cta-button:hover {
+            opacity: 0.9;
+        }
+            .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+            .product-card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+        }
+            .product-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+            .product-info {
+            padding: 20px;
+            text-align: left;
+        }
+            .product-title {
+            font-size: 1.2em;
+            color: #1b3d1b;
+            font-weight: bold;
+        }
+            .product-price {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+            .product-farmer, .product-desc, .product-stock {
+            margin: 5px 0;
+            color: #333;
+        }
+            .cta-button {
+            margin-top: 10px;
+            background: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+            .section {
+            display: none;
+        }
+            .section.active {
+            display: block;
+        }
+            .method {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+            .method.selected {
+            background-color: #c8e6c9;
+            border-color: #2e7d32;
+        }
+
+
+
+        
+        
+
+
 
