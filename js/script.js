@@ -10,11 +10,10 @@
         // Update nav links
         const navLinks = document.querySelectorAll('.nav-links a');
         navLinks.forEach(link => link.classList.remove('active'));
-
-        if (event) {
-            event.preventDefault();
+        try {
             event.target.classList.add('active');
-        }
+        } catch(e) {}
+        
     }
 
     // Marketplace filter
