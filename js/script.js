@@ -14,6 +14,8 @@
             event.target.classList.add('active');
         } catch(e) {}
         
+        document.querySelector('.nav-links')?.classList.remove('show');
+        
     }
 
     // Marketplace filter
