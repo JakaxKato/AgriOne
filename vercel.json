@@ -1,0 +1,10 @@
+
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/private.html",
+      "permanent": false
+    }
+  ]
+}
